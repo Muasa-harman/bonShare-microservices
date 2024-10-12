@@ -1,0 +1,31 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "workspace",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier  \"{apps,libs}/**/*.{ts,tsx,js,json}\" --ignore-path .gitignore",
+    "format:check": "npm format --check",
+    "format:write": "npm format --write",
+    "tsc": "npm nx run-many -t tsc",
+    "lint": "npm nx run-many -t lint",
+    "build": "npm nx run-many -t build",
+    "validate": "npm format:write && npm tsc && npm lint && npm build",
+    "prepare": "husky install",
+    "cloc": "npx cloc --exclude-dir=node_modules,dist,build,npm.lock,package.json,generated.tsx,.next,.nx ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muasa-harman/bonShare-microservices.git"
+  },
+  "keywords": [
+    "Muasa-harman"
+  ],
+  "author": "Muasa-harman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muasa-harman/bonShare-microservices/issues"
+  },
+  "homepage": "https://github.com/Muasa-harman/bonShare-microservices#readme"
+}
