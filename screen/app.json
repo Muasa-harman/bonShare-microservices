@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "bonshare",
+    "slug": "bonshare",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/recreated_logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#40B876"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.muasa.bonshare"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.muasa.bonshare"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "server",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://bonshare.dev/"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "47cc76bb-19f7-4094-b08b-f15199de827f"
+      }
+    }
+  }
+}

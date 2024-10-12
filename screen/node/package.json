@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "monolithic api",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start test",
+    "dev":"node server.js",
+    "start": "node start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muasa-harman/bonshare.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muasa-harman/bonshare/issues"
+  },
+  "homepage": "https://github.com/Muasa-harman/bonshare#readme"
+}
